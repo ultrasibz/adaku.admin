@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\CustomerIndex;
+namespace App\Http\Livewire\Customer;
 
 use App\Models\Loan;
 use App\Models\Customer;
