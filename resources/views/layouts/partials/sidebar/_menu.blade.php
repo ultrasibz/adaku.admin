@@ -41,6 +41,13 @@
 						<!--end:Menu link-->
 					</div>
 					<!--end:Menu item-->
+                    
+                    <a class="menu-link" href="{{route('customer.index')}}">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Clients</span>
+						</a>
 
 				</div>
 				<!--end:Menu sub-->
