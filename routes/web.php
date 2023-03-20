@@ -23,6 +23,11 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/', \App\Http\Livewire\User\UserIndex::class)->name('index');
         Route::get('/add', \App\Http\Livewire\User\UserAdd::class)->name('add');
     });
+    
+     Route::prefix('customer')->name('customer.')->group(function () {
+        Route::get('/', \App\Http\Livewire\User\CustomerIndex::class)->name('index');
+        
+    });
 
     Route::prefix('loan')->name('loan.')->group(function () {
         Route::get('/', \App\Http\Livewire\Loan\LoanIndex::class)->name('index');
