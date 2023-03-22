@@ -38,16 +38,15 @@
 							</span>
 							<span class="menu-title">View Users</span>
 						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-                    
-                    <a class="menu-link" href="{{route('customer.index')}}">
+                        <a class="menu-link" href="{{route('customer.index')}}">
 							<span class="menu-bullet">
 								<span class="bullet bullet-dot"></span>
 							</span>
 							<span class="menu-title">Clients</span>
 						</a>
+						<!--end:Menu link-->
+					</div>
+					<!--end:Menu item-->
 
 				</div>
 				<!--end:Menu sub-->
