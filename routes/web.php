@@ -25,7 +25,7 @@ Route::middleware(['auth'])->group(function () {
     });
     
      Route::prefix('customer')->name('customer.')->group(function () {
-        Route::get('/', \App\Http\Livewire\User\CustomerIndex::class)->name('index');
+        Route::get('/', \App\Http\Livewire\Customers\CustomerIndex::class)->name('index');
         
     });
 
