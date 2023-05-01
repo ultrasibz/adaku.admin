@@ -74,7 +74,7 @@
                                     data-kt-menu="true">
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-3">
-                                        <a href="/metronic8/demo1/../demo1/apps/customers/view.html"
+                                        <a href={{route('customer.show',$customer)}}
                                            class="menu-link px-3">View</a>
                                     </div>
                                     <!--end::Menu item-->
