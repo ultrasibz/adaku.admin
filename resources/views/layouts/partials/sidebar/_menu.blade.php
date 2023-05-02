@@ -39,6 +39,12 @@
 							<span class="menu-title">View Users</span>
 						</a>
 						<!--end:Menu link-->
+                        <a class="menu-link" href="{{route('customer.index')}}">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Clients</span>
+						</a>
 					</div>
 					<!--end:Menu item-->
 
@@ -73,6 +79,13 @@
 								<span class="bullet bullet-dot"></span>
 							</span>
                             <span class="menu-title">Unprocessed</span>
+                        </a>
+                        
+                        <a class="menu-link" href="{{route('loan.approved')}}">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+                            <span class="menu-title">Approved</span>
                         </a>
 
                         <!--end:Menu link-->
