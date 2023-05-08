@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-lg-6">
-        <div class="card-body pt-0" id="kt_profile_details_view">
+        <div class="card-body pt-0" >
             <!--begin::Card header-->
             <div class="card-header cursor-pointer">
                 <!--begin::Card title-->
@@ -48,12 +48,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                        <i>
-                            <span 
-                            class="fw-bold fs-6 text-gray-800" 
-                            >{{$customer->getFirstMediaUrl('nrc')}}</span
-                        >
-                        </i>
+                       <iframe src="{{$customer->getFirstMediaUrl('nrc')}}"></iframe>
                         
                     </div>
                     <!--end::Col-->
@@ -65,13 +60,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                        <i>
-                            <span 
-                            class="fw-bold fs-6 text-gray-800" 
-                            ></span>{{$customer->getFirstMediaUrl('payslip')}}</span
-                        >
-                        
-                        </i>
+                        <iframe src={{$customer->getFirstMediaUrl('payslip')}}</iframe>
                         
                     </div>
                     <!--end::Col-->
@@ -83,10 +72,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                        <img src="{{$customer->getFirstMediaUrl('collateral')}}" alt="collateral" width="500" height="600">
-                            <!--{{$customer->getFirstMedia('collateral')}}-->
-                        
-                        
+                        <iframe src={{$customer->getFirstMedia('collateral')}}</iframe>
                     </div>
                     <!--end::Col-->
                 </div>
@@ -97,10 +83,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                        <i>
-                            {{$customer->getFirstMediaUrl('proof_of_residence')}}
-                        
-                        </i>
+                        <iframe src={{$customer->getFirstMediaUrl('proof_of_residence')}}</iframe>
                         
                     </div>
                     <!--end::Col-->
