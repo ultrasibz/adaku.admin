@@ -33,7 +33,7 @@ class LoanShow extends Component
 
     public function reject()
     {
-        $this->loan->status = LoanStatus::APPROVED;
+        $this->loan->status = LoanStatus::REJECTED;
         $this->loan->save();
         $this->dispatchBrowserEvent('alert', ['type' => 'success','text'=>'Loan Rejected Successfully']);
     }

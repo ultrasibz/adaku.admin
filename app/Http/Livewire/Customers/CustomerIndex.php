@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Customer;
+namespace App\Http\Livewire\Customers;
 
 use App\Models\Loan;
 use App\Models\Customer;
