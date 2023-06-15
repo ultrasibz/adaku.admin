@@ -23,17 +23,17 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/', \App\Http\Livewire\User\UserIndex::class)->name('index');
         Route::get('/add', \App\Http\Livewire\User\UserAdd::class)->name('add');
     });
-
+    
      Route::prefix('customer')->name('customer.')->group(function () {
-        Route::get('/', \App\Http\Livewire\Customers\CustomerIndex::class)->name('index');
-
-//        Route::get('/{customer}/details', \App\Http\Livewire\Customer\CustomerShow::class)->name('show');
-
+        Route::get('/', \App\Http\Livewire\Customer\CustomerIndex::class)->name('index');
+        
+        Route::get('/{customer}/details', \App\Http\Livewire\Customer\CustomerShow::class)->name('show');
+        
     });
 
     Route::prefix('loan')->name('loan.')->group(function () {
         Route::get('/', \App\Http\Livewire\Loan\LoanIndex::class)->name('index');
-//        Route::get('/approved', \App\Http\Livewire\Loan\LoanApproved::class)->name('approved');
+        Route::get('/approved', \App\Http\Livewire\Loan\LoanApproved::class)->name('approved');
         Route::get('/{loan}/details', \App\Http\Livewire\Loan\LoanShow::class)->name('show');
         Route::get('/{loan}/edit', \App\Http\Livewire\Loan\LoanEdit::class)->name('edit');
     });
