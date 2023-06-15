@@ -14,9 +14,9 @@ class LoanShow extends Component
     protected $listeners = ['update' => 'render'];
 
 
-    public function mount(Loan $loan){
+    public function mount(Loan $loan,Customer $customer){
         $this->loan = $loan;
-        $this->customer = $loan->customer;
+        //$this->customer = $loan->customer;
     }
 
     public function render()
@@ -33,7 +33,7 @@ class LoanShow extends Component
 
     public function reject()
     {
-        $this->loan->status = LoanStatus::APPROVED;
+        $this->loan->status = LoanStatus::REJECTED;
         $this->loan->save();
         $this->dispatchBrowserEvent('alert', ['type' => 'success','text'=>'Loan Rejected Successfully']);
     }
