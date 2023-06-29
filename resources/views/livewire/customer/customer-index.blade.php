@@ -98,7 +98,11 @@
 
         </div>
     </div>
+    <div class="card-footer">
+        {{$customers->links()}}
+    </div>
     <!--end::Table-->
 </div>
 <!--end::Card body-->
+
 </div>

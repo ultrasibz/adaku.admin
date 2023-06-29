@@ -119,6 +119,10 @@
                 </div>
             </div>
         </div>
+
+    <div class="card-footer">
+        {{$loans->links()}}
+    </div>
         <!--end::Table-->
     </div>
     <!--end::Card body-->

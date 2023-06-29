@@ -14,9 +14,9 @@ class LoanShow extends Component
     protected $listeners = ['update' => 'render'];
 
 
-    public function mount(Loan $loan,Customer $customer){
+    public function mount(Loan $loan){
         $this->loan = $loan;
-        //$this->customer = $loan->customer;
+        $this->customer = $loan->customer;
     }
 
     public function render()

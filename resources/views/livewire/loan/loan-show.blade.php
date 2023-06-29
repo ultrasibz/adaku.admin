@@ -19,7 +19,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                       <!-- <span class="fw-bold fs-6 text-gray-800">$customer->nrc</span>-->
+                       <span class="fw-bold fs-6 text-gray-800">{{$customer->nrc}}</span>
                     </div>
                     <!--end::Col-->
                 </div>
@@ -29,7 +29,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                      <!--  <span class="fw-bold fs-6 text-gray-800">$customer->full_name</span> -->
+                        <span class="fw-bold fs-6 text-gray-800">{{$customer->full_name}}</span>
                     </div>
                     <!--end::Col-->
                 </div>
@@ -40,7 +40,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                        <!--<span class="fw-bold fs-6 text-gray-800">$customer->mobile</span>-->
+                        <span class="fw-bold fs-6 text-gray-800">{{$customer->mobile}}</span>
                     </div>
                     <!--end::Col-->
                 </div>
@@ -51,7 +51,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                       <!-- <span class="fw-bold fs-6 text-gray-800">$customer->email</span>-->
+                        <span class="fw-bold fs-6 text-gray-800">{{$customer->email}}</span>
                     </div>
                     <!--end::Col-->
                 </div>
@@ -62,7 +62,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                        <!-- <span class="fw-bold fs-6 text-gray-800">$customer->occupation</span>-->
+                        <span class="fw-bold fs-6 text-gray-800">{{$customer->occupation}}</span>
                     </div>
                     <!--end::Col-->
                 </div>
@@ -73,7 +73,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                        <!-- <span class="fw-bold fs-6 text-gray-800">$customer->place_of_work</span>-->
+                        <span class="fw-bold fs-6 text-gray-800">{{$customer->place_of_work}}</span>
                     </div>
                     <!--end::Col-->
                 </div>
@@ -84,7 +84,7 @@
                     <!--end::Label-->
                     <!--begin::Col-->
                     <div class="col-lg-8">
-                       <!--  <span class="fw-bold fs-6 text-gray-800">$customer->nationality</span>-->
+                        <span class="fw-bold fs-6 text-gray-800">{{$customer->nationality}}</span>
                     </div>
                     <!--end::Col-->
                 </div>
@@ -97,6 +97,7 @@
                     <div class="col-lg-8">
                         <!-- <p class="fw-bold fs-6 text-gray-800">$customer->address,$customer->area}}
                             ,$customer->town,$customer->province</p>-->
+                        <span class="fw-bold fs-6 text-gray-800">{{$customer->address}}</span>
                     </div>
                     <!--end::Col-->
                 </div>
